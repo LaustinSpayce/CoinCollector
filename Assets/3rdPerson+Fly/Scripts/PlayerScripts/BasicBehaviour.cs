@@ -74,16 +74,16 @@ public class BasicBehaviour : MonoBehaviour
 		sprint = Input.GetButton (sprintButton);
 
 		// Set the correct camera FOV for sprint mode.
-		if(isSprinting())
-		{
-			changedFOV = true;
-			camScript.SetFOV(sprintFOV);
-		}
-		else if(changedFOV)
-		{
-			camScript.ResetFOV();
-			changedFOV = false;
-		}
+		// if(isSprinting())
+		// {
+		// 	changedFOV = true;
+		// 	camScript.SetFOV(sprintFOV);
+		// }
+		// else if(changedFOV)
+		// {
+		// 	camScript.ResetFOV();
+		// 	changedFOV = false;
+		// }
 		// Set the grounded test on the Animator Controller.
 		anim.SetBool(groundedBool, IsGrounded());
 	}
